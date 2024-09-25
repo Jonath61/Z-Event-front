@@ -3,6 +3,7 @@
 
 .controller{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content: "";
         position: absolute;
@@ -28,6 +29,10 @@
     }
 }
 
+main{
+    margin-bottom: 270px;
+}
+
 .image-card{
     position:relative;
     &:hover{
@@ -51,4 +56,8 @@
         opacity: 0;
         transition: all 0.3s;
     }
+}
+
+.form-label{
+    color: $dark;
 }

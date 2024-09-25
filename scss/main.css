@@ -11968,6 +11968,7 @@ textarea.form-control-lg {
 }
 .controller {
   position: relative;
+  margin-bottom: 15px;
 }
 .controller::before {
   content: "";
@@ -11989,4 +11990,33 @@ textarea.form-control-lg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  margin-bottom: 270px;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.3);
+}
+.image-card img {
+  transition: all 0.3s;
+}
+.image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.form-label {
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */

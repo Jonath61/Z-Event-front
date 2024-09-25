@@ -25,7 +25,13 @@
                 <a class="nav-link" href="/galerie">Galerie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Connection/Déconnection</a>
+                <a class="nav-link" href="/account">Compte</a>
+              </li>
+              <li class="nav-item" data-show="disconnected">
+                <a class="nav-link" href="/signin">Connection</a>
+              </li>
+              <li class="nav-item" data-show="connected">
+                <button class="nav-link" id="signout-btn">Déconnection</a>
               </li>
             </ul>
       </nav></header>
@@ -38,11 +44,12 @@
         <div class="row">
             <div class="col-6 offset-md-3">
                 <h3 class="text-primery">Z-Even</h3>
-                <p>Les dons que nous allons collecter seront renvoyé à l'association <a href="https://www.savethechildren.net/">"Save the children"</a> pour proposer un avenir meilleur pour les enfants défavorisé.</p>
+                <p>Les dons que nous allons collecter seront renvoyé à l'association <a href="https://www.savethechildren.net/">"Save the children"</a> pour proposer un avenir meilleur pour les enfants défavorisés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
