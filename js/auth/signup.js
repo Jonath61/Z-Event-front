@@ -6,6 +6,9 @@ const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
+import fs from 'fs';
+const data = JSON.parse(fs.readFileSync('../../json/data.json', 'utf-8'));
+
 inputUsername.addEventListener("keyup", validateForme);
 inputMail.addEventListener("keyup", validateForme);
 inputPassword.addEventListener("keyup", validateForme);
