@@ -1,16 +1,19 @@
 //Implémenter le JS de ma page
 
+const inputUsername = document.getElementById("UsernameInput");
 const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
+inputUsername.addEventListener("keyup", validateForme);
 inputMail.addEventListener("keyup", validateForme);
 inputPassword.addEventListener("keyup", validateForme);
 inputValidationPassword.addEventListener("keyup", validateForme);
 
 //Fonction de validation de formulaire
 function validateForme(){
+    const usernameOK = validateRequired(inputUsername);
     const mailOK = validateMail(inputMail);
     const passwordOK = validatePassword(inputPassword);
     const passwordConfirmOK = validateConfirmationPassword(inputPassword, inputValidationPassword);
@@ -20,6 +23,17 @@ function validateForme(){
     }
     else{
         btnValidation.disabled = true;
+    }
+}
+
+function validateRequired(input){
+    if(input.value != ''){
+        input.classList.add("is-valid");
+        input.classList.remove("is-invalid");
+    }
+    else{
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
     }
 }
 
