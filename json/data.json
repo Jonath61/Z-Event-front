@@ -1,0 +1,12 @@
+{
+    "utilisateurs":{
+        "jonath.even@gmail.com":{
+            "username":"Jonath",
+            "password":"Azerty.61",
+            "role":"admin",
+            "twitch":"https://www.twitch.tv/jonath61"
+        }
+        
+    }
+
+}
