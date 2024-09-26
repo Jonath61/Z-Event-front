@@ -18,7 +18,7 @@ function validateForme(){
     const passwordOK = validatePassword(inputPassword);
     const passwordConfirmOK = validateConfirmationPassword(inputPassword, inputValidationPassword);
 
-    if(mailOK && passwordOK && passwordConfirmOK){
+    if(usernameOK && mailOK && passwordOK && passwordConfirmOK){
         btnValidation.disabled = false;
     }
     else{
@@ -30,10 +30,12 @@ function validateRequired(input){
     if(input.value != ''){
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
+        return true;
     }
     else{
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
+        return false;
     }
 }
 
