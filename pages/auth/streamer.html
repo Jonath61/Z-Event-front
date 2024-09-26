@@ -1,0 +1,45 @@
+<div class="controller text-center text-white"></div>
+    <div class="controller-content">
+        <h1>Connection</h1>
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="UsernameInput" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="UsernameInput" placeholder="NomUtilisateur" name="Username"> 
+          </div>
+          <div class="mb-3"></div>
+            <label for="TwitchInput" class="form-label">Lien Twitch</label>
+            <input type="url" class="form-control" id="TwitchInput" placeholder="LienTwitch" name="Twitch"> 
+          </div>
+        <div class="mb-3">
+            <label for="EmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+          </div>
+          <div class="mb-3">
+            <label for="PasswordInput" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="PasswordInput" name="Password">
+            <div class="invalid-feedback">
+                Au moins : 8 charactères, une majuscule et minuscule, un chiffre, un charactères spécial (@,?,...).
+            </div>
+            <div class="valid-feedback">
+                Mot de passe bon.
+            </div>
+          </div>
+          <div class="mb-3">
+              <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+              <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+            <div  class="invalid-feedback">
+                La confirmation n'est pas identique au mot de passe.
+            </div>
+            </div>
+          <div class="text-center">
+              <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+          </div>
+      </form>
+      <div class="text-center pt-3">
+          <a href="/signin">Vous avez déjà un compte ? Connectez-vous ici !</a>
+      </div>
+</div>

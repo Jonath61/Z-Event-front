@@ -10,7 +10,6 @@ function getRole(){
 
 function signout(){
     eraseCookie(tokenCookieName);
-    eraseCookie("role");
     Window.location.reload();
 }
 
@@ -48,7 +47,7 @@ function eraseCookie(name) {
 }
 
 function isConnected(){
-    if(getToken() == nul || getToken == undefined){
+    if(getToken() == null || getToken == undefined){
         return false;
     }
     else{
